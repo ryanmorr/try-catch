@@ -6,11 +6,13 @@ Alternative to the try/catch block that offers greater performance benefits in s
 
 The function has two required parameters, the first being a "try" function to test code, the second being a "catch" function which will be invoked and provided an error object if an exception is raised.
 
-	tryCatch(function(){
-		// try something   
-	}, function(error){
-		// handle error
-	});
+```javascript
+tryCatch(function(){
+	// try something   
+}, function(error){
+	// handle error
+});
+```
 	
 Returning false in the "catch" function will allow the error to propagate to the browser. Returning anything else or nothing at all will suppress the error.
 
