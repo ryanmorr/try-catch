@@ -24,9 +24,9 @@
 	};
 	
 	//Define a handler function for window.onerror
-	win.onerror = function(msg, file, line){
-		//Create the error object
-		var error = new Error(), suppress;
+	win.onerror = function(msg, file, line, col, err){
+		//Use the error object if provided, otherwise create it
+		var error = err || new Error(), suppress;
 		//Add properties to error object to uniform functionality across browsers
 		error.message = msg;
 		error.fileName = file;
