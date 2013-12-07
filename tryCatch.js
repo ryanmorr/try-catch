@@ -41,9 +41,9 @@
             // otherwise suppress it like a native try/catch block would
             return suppress === false ? false : true;
         }
-        // Handler must not have been invoked in the context of the tryCatch function. If a previous event handler was bound 
-        // to window.onerror then invoke it now and return. Otherwise, fallback to default behaviour and allow the error 
-        // to propagate to the browser by returning false
+        // Handler must not have been invoked in the context of the tryCatch function. If a previous event handler 
+        // was bound to window.onerror then invoke it now and return. Otherwise, fallback to default behaviour and 
+        // allow the error to propagate to the browser by returning false
         return handler ? handler.apply(win, arguments) : false;
     };
     
