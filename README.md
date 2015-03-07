@@ -1,12 +1,6 @@
 # tryCatch
 
-Alternative to the try/catch block that offers greater performance benefits in some circumstances and customized functionality. Please be advised, this is an expertimental project, use at your own risk.
-
-## Concept
-
-The solution leverages the `window.onerror` event as a means of detecting runtime errors including any errors that you explicitly throw yourself. The event is also able to closely mimic the error suppression of a catch block by returning false from `window.onerror`, while returning true allows the error to propagate to the browser.
-
-Please refer to [http://www.ryanmorr.com/reinventing-the-try-catch-block](http://www.ryanmorr.com/reinventing-the-try-catch-block) for more detailed information regarding this project.
+Emulates a native try/catch block for customized functionality and greater performance benefits in some circumstances. Please refer to the [blog post](http://www.ryanmorr.com/reinventing-the-try-catch-block) for more detailed information regarding this project. Be advised, this is an expertimental project, use at your own risk.
 
 ## Usage
 
