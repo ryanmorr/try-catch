@@ -28,7 +28,6 @@
     };
 
     win.onerror = function(msg, file, line, col, err){
-        console.log(msg)
         // If the error object was not provided, than create it
         var error = err || new Error(), suppress;
         // Add properties to the error object to uniform 
