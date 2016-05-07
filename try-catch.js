@@ -5,6 +5,8 @@
  * @param {Function} catchFn
  */
 function tryCatch(tryFn, catchFn) {
+    // Activate strict mode
+    'use strict';
     // Cache current `onerror` callback
     var prev = window.onerror;
     // Define a new callback for global `onerror` events
